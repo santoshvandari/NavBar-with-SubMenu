@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    font-family:  'sans-serif',Verdana, Geneva, Tahoma;
+}
+nav{
+  background-color: rgb(0, 100, 0);
+  width: 100vw;
+  height: 56px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+  list-style-type: none;
+  margin:14px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  align-self: center;
+  padding: 16px;
+}
+.on a,nav > ul li a:hover {
+    background-color: #2bab0d;
+    border-radius: 5px;
+    padding: 10px 16px;
+  }
+.sub1{
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin:6px 0 0 6px;
+    height: 140px;
+    width: 190px;
+    display: none;
+    border-radius: 5px;
+  }
+.sub1 ul{
+    display: block;
+  }
+ .sub1 ul li{
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px dotted #fff;
+  }
+  .sub1 ul li a{
+   padding-right: 0px;
+  }
+  
+  .sub1 ul li a:hover {
+    background:transparent; 
+    color:#b2ff00;
+    text-align: left;
+  }
+  .sub1 ul li:last-child, .show3 .last {
+    border: none;
+  }
+  .show:hover .sub1{
+    display: block;
+  }
+  .sub2{
+    position: absolute;
+    background: rgb(0, 100, 0);
+    left: 180px;
+top: 40px;
+    height: 140px;
+    width: 190px;
+    display: none;
+    border-radius: 5px;
+  }
+.sub2 ul{
+    display: block;
+  }
+ .sub2 ul li{
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px dotted #fff;
+  }
+  .sub2 ul li a{
+   padding-right: 0px;
+  }
+  
+  .sub2 ul li a:hover {
+    background:transparent; 
+    color:#b2ff00;
+    text-align: left;
+  }
+  .sub2 ul li:last-child{
+    border: none;
+  }
+  .show2:hover .sub2{
+    display: block;
+  }
+  .sub3{
+    position: absolute;
+    background: rgb(0, 100, 0);
+    left: 180px;
+top: 83px;
+    height: 230px;
+    width: 190px;
+    display: none;
+    border-radius: 5px;
+  }
+  #dev{
+    top: 40px;
+  }
+.sub3 ul{
+    display: block;
+  }
+ .sub3 ul li{
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px dotted #fff;
+  }
+  .sub3 ul li a{
+   padding-right: 0px;
+  }
+  
+  .sub3 ul li a:hover {
+    background:transparent; 
+    color:#b2ff00;
+    text-align: left;
+  }
+  .sub3 ul li:last-child{
+    border: none;
+  }
+  .show3:hover .sub3{
+    display: block;
+  }
+  .social-media{
+    height: 230px;
+    border-radius: 5px;
+  }
+
+.fa{
+  margin-right: 8px;
+}
+.fa-solid{
+  float:right;
+}
+.fa-brands{
+  float:left;
+  font-size: 20px;
+}
