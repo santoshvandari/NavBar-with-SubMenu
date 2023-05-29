@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <!-- This is designing by Santosh bhandari
     GitHub:- @santoshvandari -->
     <title>Navigation Bar With Sub Menu</title>
@@ -19,8 +20,8 @@
             <ul>
                 <li class="on"><a href="#"><i class="fa fa-home"></i>Home</a></li>
                 <div class="show">
-                    <li><a href="#"><i class="fa fa-user"></i>About Us</a></li>
-                    <div class="sub1">
+                    <li id="about"><a href="#"><i class="fa fa-user"></i>About Us <i class="bi bi-chevron-right"></i></a></li>
+                    <div class="sub1" id="about-submenu">
                         <ul>
                             <li><a href="#">Mission</a></li>
                             <li><a href="#">Vision</a></li>
@@ -29,12 +30,12 @@
                     </div>
                 </div>
                 <div class="show">
-                    <li><a href="#"><i class="fa fa-clone"></i>Services</a></li>
+                    <li id="services"><a href="#"><i class="fa fa-clone"></i>Services<i class="bi bi-chevron-right"></i></a></li>
                     <div class="sub1">
                         <ul>
                             <li><a href="#">Web Designing</a></li>
                             <div class="show2">
-                                <li><a href="#">Marketing<i class="fa-solid fa-angle-right"></i></a></li>
+                                <li id="marketing"><a href="#">Marketing<i class="fa-solid fa-angle-right"></i></a></li>
                                 <div class="sub2">
                                     <ul>
                                         <li><a href="#">SEO</a></li>
@@ -43,9 +44,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="show3">
-                                <li class="last"><a href="#">Mobile App<i class="fa-solid fa-angle-right"></i></a></li>
-                                <div class="sub3">
+                            <div class="show2">
+                                <li class="last" id="mobile-app"><a href="#">Mobile App<i class="fa-solid fa-angle-right"></i></a></li>
+                                <div class="sub2">
                                     <ul>
                                         <li><a href="#">Android App</a></li>
                                         <li><a href="#">iOS App</a></li>
@@ -62,13 +63,13 @@
                 <li><a href="#"><i class="fa fa-building"></i>Investors</a></li>
                 <li><a href="#"><i class="fa fa-hand-holding-dollar"></i>Pricing</a></li>
                 <div class="show">
-                    <li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+                    <li id="training"><a href="#"><i class="fa fa-edit"></i>Training<i class="bi bi-chevron-right"></i></a></li>
                     <div class="sub1">
                         <ul>
                             <li><a href="#">Testing</a></li>
-                            <div class="show3">
-                                <li><a href="#">Development<i class="fa-solid fa-angle-right"></i></a></li>
-                                <div class="sub3" id="dev">
+                            <div class="show2">
+                                <li id="development"><a href="#">Development<i class="fa-solid fa-angle-right"></i></a></li>
+                                <div class="sub2" id="dev">
                                     <ul>
                                         <li><a href="#">Java</a></li>
                                         <li><a href="#">Angular</a></li>
@@ -88,7 +89,7 @@
                 </div>
                 <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
                 <div class="show">
-                    <li><a href="#"><i class="fa fa-bullhorn"></i>Social Media</a></li>
+                    <li id="social-media"><a href="#"><i class="fa fa-bullhorn"></i>Social Media<i class="bi bi-chevron-right"></i></a></li>
                     <div class="sub1 social-media">
                         <ul>
                             <li><a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a></li>
